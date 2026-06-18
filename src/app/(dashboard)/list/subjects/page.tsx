@@ -1,3 +1,4 @@
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
@@ -39,15 +40,21 @@ export default function SubjectListPage() {
       <td className="hidden md:table-cell">{item?.teachers.join(",")}</td>
       <td>
         <div className="flex items-center gap-2">
-          <Link href={`/list/teachers/${item.id}`}>
+          {/* <Link href={`/list/teachers/${item.id}`}>
             <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lama-sky">
               <GrEdit width={16} height={16}/>
             </button>
-          </Link>
+          </Link> */}
           {/* <Link href={`/list/teachers/${item.id}`}> */}
-            {role === "admin" && ( <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lama-purple">
-              <RiDeleteBin5Line width={16} height={16}/>
-            </button>)}
+            {role === "admin" && ( <>
+            
+              <FormModal type="update" table="subject" data={item}/>
+              <FormModal type="delete" table="subject" id={item.id}/>
+            </>
+            //   <button className="w-7 h-7 flex items-center justify-center rounded-full bg-lama-purple">
+            //   <RiDeleteBin5Line width={16} height={16}/>
+            // </button>
+          )}
           {/* </Link> */}
         </div>
       </td>
