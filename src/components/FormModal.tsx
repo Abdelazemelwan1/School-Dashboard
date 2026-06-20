@@ -23,7 +23,7 @@ const EventForm = dynamic(() => import("./forms/EventForm"));
 const AnnouncementForm = dynamic(() => import("./forms/AnnouncementForm"));
 
 const forms: {
-    [key: string]: (type: "create" | "update" , dara?: any) => JSX.Element;
+    [key: string]: (type: "create" | "update" , data?: any) => React.ReactNode;
 } = {
     teacher: (type , data) => <TeacherForm type={type} data={data} />,
     student: (type , data) => <StudentForm type={type} data={data} />,
