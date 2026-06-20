@@ -27,16 +27,16 @@ const forms: {
 } = {
     teacher: (type , data) => <TeacherForm type={type} data={data} />,
     student: (type , data) => <StudentForm type={type} data={data} />,
-    Parent: (type , data) => <ParentForm type={type} data={data} />,
-    Class: (type , data) => <ClassForm type={type} data={data} />,
-    Subject: (type , data) => <SubjectForm type={type} data={data} />,
-    Lesson: (type , data) => <LessonForm type={type} data={data} />,
-    Exam: (type , data) => <ExamForm type={type} data={data} />,
-    Assignment: (type , data) => <AssignmentForm type={type} data={data} />,
-    ResultForm: (type , data) => <ResultForm type={type} data={data} />,
-    Attendance: (type , data) => <AttendanceForm type={type} data={data} />,
-    Event: (type , data) => <EventForm type={type} data={data} />,
-    Announcement: (type , data) => <AnnouncementForm type={type} data={data} />,
+    parent: (type , data) => <ParentForm type={type} data={data} />,
+    class: (type , data) => <ClassForm type={type} data={data} />,
+    subject: (type , data) => <SubjectForm type={type} data={data} />,
+    lesson: (type , data) => <LessonForm type={type} data={data} />,
+    exam: (type , data) => <ExamForm type={type} data={data} />,
+    assignment: (type , data) => <AssignmentForm type={type} data={data} />,
+    resultForm: (type , data) => <ResultForm type={type} data={data} />,
+    attendance: (type , data) => <AttendanceForm type={type} data={data} />,
+    event: (type , data) => <EventForm type={type} data={data} />,
+    announcement: (type , data) => <AnnouncementForm type={type} data={data} />,
 }
 
 const FormModal = ({table, type,data,id} : {
