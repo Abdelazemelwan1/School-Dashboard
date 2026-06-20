@@ -37,7 +37,7 @@ export default function LessonForm({type , data}:{type:"create" | "update"; data
     })
   return (
     <form className='flex flex-col gap-8' onSubmit={onSubmit}>
-        <h1 className="text-xl font-semibold">Create a new Student</h1>
+        <h1 className="text-xl font-semibold">Create a new Lesson</h1>
         <span className="text-xs text-gray-400 font-medium">Authentication Information</span>
         <div className="flex justify-between flex-wrap gap-4">
             <InputField label="Username" name="username" defaultValue={data?.username} register={register} error={errors.username}/>
