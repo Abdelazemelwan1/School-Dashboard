@@ -100,7 +100,8 @@ export default function TeacherListPage() {
     </tr>
   )
 
-  return (
+  return (<>
+    
     <div className="bg-white p-4 rounded-md flex-1 m-4 mt-0">
       {/* TOP */}
       <div className="flex items-center justify-between">
@@ -127,6 +128,6 @@ export default function TeacherListPage() {
       <Table columns={columns} renderRow={renderRow} data={teachersData}/>
       {/* PAGINAIION */}
         <Pagination/>
-    </div>
+    </div></>
   )
 }
